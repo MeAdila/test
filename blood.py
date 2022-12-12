@@ -22,7 +22,6 @@ tab1, tab2, tab3, tab4 = st.tabs(["Description", "Import Data", "Modelling", "Im
 
 with tab1:
     st.write("Dataset yang digunakan pada penelitian ini yakni Blood Transfusion Datasets")
-    st.write("Blood Transfusion")
     st.write("Transfusi darah adalah proses menyalurkan darah atau produk berbasis darah dari satu orang ke sistem peredaran orang lainnya. Transfusi darah berhubungan dengan kondisi medis seperti kehilangan darah dalam jumlah besar disebabkan trauma, operasi, syok dan tidak berfungsinya organ pembentuk sel darah merah.")
     st.write("Apa Manfaat Transfusi Darah?")
     st.write("- Meningkatkan kadar Hb (Hemoglobin) pada keadaan anemia,")
