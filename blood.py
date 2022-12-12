@@ -37,36 +37,8 @@ with tab2:
         data = pd.read_csv(data_file)
         data = data.dropna()
         st.dataframe(data)
-        
-with tab3:
-    st.write("Normalisasi Data")
-    data.head()
-    
-    from sklearn.preprocessing import LabelEncoder
-    enc=LabelEncoder()
-    for x in data.columns:
-      data[x]=enc.fit_transform(data[x])
-    data.info()
-    
-    data.head()
-    st.dataframe(data)
-       
-    y=data['donasidarah']
-    x=data.drop(['donasidarah'],axis=1)
-    st.write("Menampilkan data yang sudah dinormalisasi dan dilakukan scaled features")
-    st.dataframe(data)
-    from sklearn.model_selection import train_test_split
-    X_train,X_test,y_train,y_test= train_test_split(x,y,test_size=0.3,stratify=y)
-    st.write("X_train.shape")
-    st.write(X_train.shape)
-    st.write("X_test.shape")
-    st.write(X_test.shape)
-    st.write("y_train.shape")
-    st.write(y_train.shape)
-    st.write("y_test.shape")
-    st.write(y_test.shape)
 
-with tab4:
+with tab3:
     st.write("## Naive Bayes")
     # Feature Scaling to bring the variable in a single scale
     from sklearn.preprocessing import StandardScaler
@@ -112,7 +84,7 @@ with tab4:
     akurasi = round(100 * accuracy_score(y_test,y_pred))
     st.write('Model Accuracy Score: {0:0.2f}'.format(akurasi))
     
-with tab5:
+with tab4:
     thyroid_model = pickle.load(open('bloodmodel.sav', 'rb'))
     bulanterkini = st.text_input('Masukkan Bulan Pada Saat Ini : ')
     frekuensi = st.text_input('Frekuensi')
