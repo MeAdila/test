@@ -46,6 +46,7 @@ with tab2:
 with tab3:
     st.write("## Naive Bayes")
     # Feature Scaling to bring the variable in a single scale
+    from sklearn.model_selection import train_test_split
     from sklearn.preprocessing import StandardScaler
     sc = StandardScaler()
     X_train = sc.fit_transform(X_train)
