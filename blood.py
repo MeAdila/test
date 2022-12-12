@@ -31,7 +31,7 @@ with tab1:
     st.write("- Mencegah dan mengatasi perdarahan karena kekurangan/kelainan komponen darah misalnya pada penderita thalasemia.")
     st.write("Informasi lebih lanjut : https://rs-soewandhi.surabaya.go.id/transfusi-darah-manfaat-dan-resikonya-untuk-pasien/")
     st.write("Or Transfusion Information : https://www.dictionary.com/browse/transfusion")
-    st.write("https://www.kaggle.com/datasets/whenamancodes/blood-transfusion-dataset")
+    st.write("Link of dataset : https://www.kaggle.com/datasets/whenamancodes/blood-transfusion-dataset")
     
 with tab2:
     st.write("Load Data :")
