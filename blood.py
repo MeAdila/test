@@ -48,14 +48,6 @@ with tab3:
     x=data.drop(['donasidarah'],axis=1)
     from sklearn.model_selection import train_test_split
     X_train,X_test,y_train,y_test= train_test_split(x,y,test_size=0.3,stratify=y)
-    st.write("X_train.shape")
-    st.write(X_train.shape)
-    st.write("X_test.shape")
-    st.write(X_test.shape)
-    st.write("y_train.shape")
-    st.write(y_train.shape)
-    st.write("y_test.shape")
-    st.write(y_test.shape)
     st.write("## Naive Bayes")
     # Feature Scaling to bring the variable in a single scale
     from sklearn.preprocessing import StandardScaler
