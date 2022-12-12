@@ -50,14 +50,6 @@ with tab3:
     
     data.head()
     st.dataframe(data)
-    
-    st.write("Scaled Features")
-    data['bulanterkini']=(data['bulanterkini']-data['bulanterkini'].min())/(data['bulanterkini'].max()-data['bulanterkini'].min())
-    data['frekuensi']=(data['frekuensi']-data['frekuensi'].min())/(data['frekuensi'].max()-data['frekuensi'].min())
-    data['CCdarah']=(data['CCdarah']-data['CCdarah'].min())/(data['CCdarah'].max()-data['CCdarah'].min())
-    data['totalbulan']=(data['totalbulan']-data['totalbulan'].min())/(data['totalbulan'].max()-data['totalbulan'].min())
-
-    st.dataframe(data)
        
     y=data['binaryClass']
     x=data.drop(['binaryClass'],axis=1)
