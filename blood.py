@@ -18,7 +18,7 @@ from sklearn.datasets import make_classification
 #judul web
 st.title('Data Mining')
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["Description", "Import Data", "Modelling", "Implementation"])
+tab1, tab2, tab3, tab4 = st.tabs(["Description", "Import Data", "Modelling", "Implementation"])
 
 with tab1:
     st.write("Dataset yang digunakan pada penelitian ini yakni Blood Transfusion Datasets")
