@@ -51,8 +51,8 @@ with tab3:
     data.head()
     st.dataframe(data)
        
-    y=data['binaryClass']
-    x=data.drop(['binaryClass'],axis=1)
+    y=data['donasidarah']
+    x=data.drop(['donasidarah'],axis=1)
     st.write("Menampilkan data yang sudah dinormalisasi dan dilakukan scaled features")
     st.dataframe(data)
     from sklearn.model_selection import train_test_split
