@@ -28,8 +28,13 @@ with tab1:
     st.write("- Mengganti darah yang hilang karena perdarahan misalnya perdarahan saat melahirkan,")
     st.write("- Mengganti kehilangan plasma darah misalnya pada luka bakar,")
     st.write("- Mencegah dan mengatasi perdarahan karena kekurangan/kelainan komponen darah misalnya pada penderita thalasemia.")
+    st.write("Apa Resiko Transfusi Darah?")
+    st.write("- Demam, menggigil")
+    st.write("- Alergi, Gatal, kemerahan di kulit")
+    st.write("- Kelebihan cairan")
+    st.write("- Nyeri dada, nyeri punggung")
     st.write("Informasi lebih lanjut : https://rs-soewandhi.surabaya.go.id/transfusi-darah-manfaat-dan-resikonya-untuk-pasien/")
-    st.write("Or Transfusion Information : https://www.dictionary.com/browse/transfusion")
+    st.write("Link Github Repository : https://github.com/MeAdila/test")
     st.write("Link of dataset : https://www.kaggle.com/datasets/whenamancodes/blood-transfusion-dataset")
     
 with tab2:
