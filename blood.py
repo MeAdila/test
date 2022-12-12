@@ -18,14 +18,19 @@ from sklearn.datasets import make_classification
 #judul web
 st.title('Data Mining')
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["Description", "Import Data", "Preprocessing", "Modelling", "Implementation"])
+tab1, tab2, tab3, tab4 = st.tabs(["Description", "Import Data", "Modelling", "Implementation"])
 
 with tab1:
-    st.write("Dataset yang digunakan pada penelitian ini yakni Thyroid Disease Datasets")
-    st.write("Thyroid Disease")
-    st.write("The most common thyroid disorder is hypothyroidism. Hypo- means deficient or under(active), so hypothyroidism is a condition in which the thyroid gland is underperforming or producing too little thyroid hormone. Recognizing the symptoms of hypothyroidism is extremely important.")
-    st.write("Data Set Information : From Garavan Institute, Documentation: as given by Ross Quinlan, 6 databases from the Garavan Institute in Sydney, Australia.")
-    st.write("Approximately the following for each database : 2800 training (data) instances and 972 test instances, Plenty of missing data, 29 or so attributes, either Boolean or continuously-valued")
+    st.write("Dataset yang digunakan pada penelitian ini yakni Blood Transfusion Datasets")
+    st.write("Blood Transfusion")
+    st.write("Transfusi darah adalah proses menyalurkan darah atau produk berbasis darah dari satu orang ke sistem peredaran orang lainnya. Transfusi darah berhubungan dengan kondisi medis seperti kehilangan darah dalam jumlah besar disebabkan trauma, operasi, syok dan tidak berfungsinya organ pembentuk sel darah merah.")
+    st.write("Apa Manfaat Transfusi Darah?")
+    st.write("- Meningkatkan kadar Hb (Hemoglobin) pada keadaan anemia,")
+    st.write("- Mengganti darah yang hilang karena perdarahan misalnya perdarahan saat melahirkan,")
+    st.write("- Mengganti kehilangan plasma darah misalnya pada luka bakar,")
+    st.write("- Mencegah dan mengatasi perdarahan karena kekurangan/kelainan komponen darah misalnya pada penderita thalasemia.")
+    st.write("Informasi lebih lanjut : https://rs-soewandhi.surabaya.go.id/transfusi-darah-manfaat-dan-resikonya-untuk-pasien/")
+    st.write("Or Transfusion Information : https://www.dictionary.com/browse/transfusion")
     st.write("https://www.kaggle.com/datasets/whenamancodes/blood-transfusion-dataset")
     
 with tab2:
