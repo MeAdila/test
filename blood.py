@@ -18,7 +18,7 @@ from sklearn.datasets import make_classification
 #judul web
 st.title('Data Mining')
 
-tab1, tab2, tab3, tab4 = st.tabs(["Description", "Import Data", "Modelling", "Implementation"])
+tab1, tab2, tab3, tab4 = st.tabs(["Description", "Data", "Modelling", "Implementation"])
 
 with tab1:
     st.write("Dataset yang digunakan pada penelitian ini yakni Blood Transfusion Datasets")
@@ -38,14 +38,8 @@ with tab1:
     st.write("Link of dataset : https://www.kaggle.com/datasets/whenamancodes/blood-transfusion-dataset")
     
 with tab2:
-    st.write("Load Data :")
-    data_file = st.file_uploader("Upload CSV",type=['csv'])
-    if data_file is not None:
-        file_details = {"Filename":data_file.name,"FileType":data_file.type,"FileSize":data_file.size}
-        st.write(file_details)
-        data = pd.read_csv(data_file)
-        data = data.dropna()
-        st.dataframe(data)
+    df = pd.read_csv('https://raw.githubusercontent.com/Ais-122/Machine-Learning/main/indian_liver_patient.csv')
+    st.dataframe(df)
         
 with tab3:
     y=data['donasidarah']
