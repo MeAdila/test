@@ -40,8 +40,8 @@ with tab1:
     st.write("Link of datasets : https://www.kaggle.com/datasets/whenamancodes/blood-transfusion-dataset")
     
 with tab2:
-    df = pd.read_csv('https://raw.githubusercontent.com/MeAdila/test/main/transfusion.csv')
-    st.dataframe(df)
+    data = pd.read_csv('https://raw.githubusercontent.com/MeAdila/test/main/transfusion.csv')
+    st.dataframe(data)
         
 with tab3:
     y=data['donasidarah']
