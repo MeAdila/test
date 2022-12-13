@@ -37,7 +37,7 @@ with tab1:
     st.write("- Nyeri dada, nyeri punggung")
     st.write("Informasi lebih lanjut : https://rs-soewandhi.surabaya.go.id/transfusi-darah-manfaat-dan-resikonya-untuk-pasien/")
     st.write("Link Github Repository : https://github.com/MeAdila/test")
-    st.write("Link of dataset : https://www.kaggle.com/datasets/whenamancodes/blood-transfusion-dataset")
+    st.write("Link of datasets : https://www.kaggle.com/datasets/whenamancodes/blood-transfusion-dataset")
     
 with tab2:
     df = pd.read_csv('https://raw.githubusercontent.com/MeAdila/test/main/transfusion.csv')
