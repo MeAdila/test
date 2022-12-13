@@ -21,6 +21,8 @@ st.title('Data Mining')
 tab1, tab2, tab3, tab4 = st.tabs(["Description", "Data", "Modelling", "Implementation"])
 
 with tab1:
+    st.write("##### Nama : Fadilatul Jannah")
+    st.write("##### NIM  : 200411100148")
     st.write("Dataset yang digunakan pada penelitian ini yakni Blood Transfusion Datasets")
     st.write("Transfusi darah adalah proses menyalurkan darah atau produk berbasis darah dari satu orang ke sistem peredaran orang lainnya. Transfusi darah berhubungan dengan kondisi medis seperti kehilangan darah dalam jumlah besar disebabkan trauma, operasi, syok dan tidak berfungsinya organ pembentuk sel darah merah.")
     st.write("Apa Manfaat Transfusi Darah?")
@@ -38,7 +40,7 @@ with tab1:
     st.write("Link of dataset : https://www.kaggle.com/datasets/whenamancodes/blood-transfusion-dataset")
     
 with tab2:
-    df = pd.read_csv('https://raw.githubusercontent.com/Ais-122/Machine-Learning/main/indian_liver_patient.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/MeAdila/test/main/transfusion.csv')
     st.dataframe(df)
         
 with tab3:
